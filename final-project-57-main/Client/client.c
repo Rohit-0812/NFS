@@ -119,6 +119,7 @@ void client() {
 
             Ipaddress SS_info;
 
+
             int recvstatus = recv(NMsocket, (Ipaddress*)&SS_info, sizeof(SS_info.Ipaddress) + sizeof(SS_info.port), 0);
             if (recvstatus < 0) {
                 perror("recv");
